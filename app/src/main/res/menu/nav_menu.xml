@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/dogs"
+    android:icon="@drawable/ic_baseline_pet"
+    android:title="Dogs"/>
+
+    <item
+        android:id="@+id/cats"
+        android:icon="@drawable/ic_baseline_pet"
+        android:title="Cats"/>
+
+    <item
+        android:id="@+id/accessories"
+        android:icon="@drawable/ic_baseline_pet"
+        android:title="Accessories"/>
+
+</menu>

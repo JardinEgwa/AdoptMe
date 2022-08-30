@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:background="#f4e4b8"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splashscreen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO THE FURMILY "
+        android:textSize="35sp"
+        android:fontFamily="@font/bangers"
+        android:textColor="#79000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up to adopt me"
+        android:textSize="18sp"
+        android:textColor="#79000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:hint="Email Address"
+        android:drawableStart="@drawable/ic_baseline_email"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#79000000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:hint="Password"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_baseline_lock"
+        android:inputType="textPassword"
+        android:textColorHint="#79000000"
+        android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Signup_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:backgroundTint="#A08165"
+        android:textColor="#79000000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:onClick="gotoLogin"
+        android:backgroundTint="#f4e4b8"
+        android:textColor="@color/black"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

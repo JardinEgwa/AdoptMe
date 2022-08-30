@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "435821533794",
+    "project_id": "adoptme-733eb",
+    "storage_bucket": "adoptme-733eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435821533794:android:af2d27c1df8218667c4f3b",
+        "android_client_info": {
+          "package_name": "com.example.adoptme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435821533794-rn8hcjdpc7l7cf7vgq4muq69mvg5pnds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgjPEqaDBcdN8B7Gr7ElFHEJJpoDr_Atc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435821533794-rn8hcjdpc7l7cf7vgq4muq69mvg5pnds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

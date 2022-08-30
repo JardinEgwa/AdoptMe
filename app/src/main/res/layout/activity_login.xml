@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#f4e4b8"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splashscreen"/>
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT'S GOOD TO HAVE YOU BACK! "
+        android:textSize="35sp"
+        android:fontFamily="@font/bangers"
+        android:textColor="#79000000"/>
+
+    <TextView
+        android:id="@+id/txt_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN TO CONTINUE"
+        android:textSize="18sp"
+        android:textColor="#79000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_login"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:background="@drawable/edittext_border"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp"
+            android:textColorHint="#79000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:id="@+id/password_login"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:textSize="30sp"
+            android:textColorHint="#79000000"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/Btn_forgot"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#79000000"
+            android:backgroundTint="#A08165"
+            android:text="Forgot Password"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/Btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_gravity="center_horizontal"
+            android:onClick="performLogin"
+            android:textColor="#79000000"
+            android:backgroundTint="#A08165"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <Button
+            android:id="@+id/Btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f4e4b8"
+            android:onClick="gotoSignUp"
+            android:text="Don't have an account? Signup"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
