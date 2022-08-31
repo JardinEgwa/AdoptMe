@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.adoptme.adapter.MainRecyclerAdapter
 import com.example.adoptme.databinding.ActivityMainBinding
 import com.example.adoptme.model.AllCategory
+import com.example.adoptme.model.CategoryItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -35,7 +36,45 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(binding.root)
 
-//
+//data for model class
+//        first category
+        val categoryItemList: MutableList<CategoryItem> = ArrayList()
+        categoryItemList.add(CategoryItem(1,R.drawable.beagle))
+        categoryItemList.add(CategoryItem(1,R.drawable.dog2))
+        categoryItemList.add(CategoryItem(1,R.drawable.dog3))
+        categoryItemList.add(CategoryItem(1,R.drawable.dog4))
+        categoryItemList.add(CategoryItem(1,R.drawable.dog5))
+
+        //        second category
+        val categoryItemList2: MutableList<CategoryItem> = ArrayList()
+        categoryItemList2.add(CategoryItem(1,R.drawable.birman))
+        categoryItemList2.add(CategoryItem(1,R.drawable.siamese))
+        categoryItemList2.add(CategoryItem(1,R.drawable.occicat))
+        categoryItemList2.add(CategoryItem(1,R.drawable.mainecoon))
+        categoryItemList2.add(CategoryItem(1,R.drawable.sibeariancat))
+
+        //        third category
+        val categoryItemList3: MutableList<CategoryItem> = ArrayList()
+        categoryItemList3.add(CategoryItem(1,R.drawable.budgie))
+        categoryItemList3.add(CategoryItem(1,R.drawable.canary))
+        categoryItemList3.add(CategoryItem(1,R.drawable.dove))
+        categoryItemList3.add(CategoryItem(1,R.drawable.finch))
+        categoryItemList3.add(CategoryItem(1,R.drawable.macaw))
+
+        //        fourth category
+        val categoryItemList4: MutableList<CategoryItem> = ArrayList()
+        categoryItemList4.add(CategoryItem(1,R.drawable.dogcollar))
+        categoryItemList4.add(CategoryItem(1,R.drawable.dogleash))
+        categoryItemList4.add(CategoryItem(1,R.drawable.litterbox))
+        categoryItemList4.add(CategoryItem(1,R.drawable.birdcage))
+
+        val allCategory: MutableList<AllCategory> = ArrayList()
+        allCategory.add(AllCategory("Dogs",categoryItemList))
+        allCategory.add(AllCategory("Cats",categoryItemList2))
+        allCategory.add(AllCategory("Birds",categoryItemList3))
+        allCategory.add(AllCategory("Accessories",categoryItemList4))
+
+        setMainCategoryRecycler(allCategory)
 
 //Configure Action Bar
         actionBar = supportActionBar!!
@@ -72,18 +111,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//    private fun replacefragment(dogsFragment: DogsFragment) {
-//
-//        val fragmentManager = supportFragmentManager
-//        val fragmentTransaction = fragmentManager.beginTransaction()
-//        fragmentTransaction.replace(R.id.frame_layout,dogsFragment)
-//        fragmentTransaction.commit()
-//
-//    }
-//
-//    private fun loadFragment(fragment: Fragment){
-//        val transaction = supportFragmentManager.beginTransaction()
-//        transaction.replace(R.id.frame_layout,fragment)
-//        transaction.addToBackStack(null)
-//        transaction.commit()
-//    }
